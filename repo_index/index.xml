@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modpatch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <patchname>Simple-x3-Vocal</patchname>
+  <fullpatchname>Simple Vocal Filter Delay (3 Lines)</fullpatchname>
+  <creator>w_ellis</creator>
+  <repopath>git@github:wellis/Sonic-Core/repo/w_ellis/mod_patches/Simple-x3-Vocal</repopath>
+  <thumb>w_ellis_Simple-x3-Vocal_thumb.jpg</thumb>
+  <desc>A delay patch with a vocal filter in front of each of the 3 delay lines.</desc>
+  <tag type="patchtype">Effect</tag>
+  <tag type="patchtype">Delay</tag>
+  <modshell>2<modshell>
+  <mod>SC/Effects/Delay/Delay</mod>
+  <mod>SC/Filter/Comb&Vocal/Vocal Filter</mod>
+</modpatch>
+<modpatch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <patchname>FM-Filter-Bass-Gen</patchname>
+  <fullpatchname>FM Filter Bass Generator</fullpatchname>
+  <creator>w_ellis</creator>
+  <repopath>git@github:wellis/Sonic-Core/repo/w_ellis/mod_patches/FM-Filter-Bass-Gen</repopath>
+  <thumb>w_ellis_FM-Filter-Bass-Gen_thumb.jpg</thumb>
+  <desc>The aim of the patch is to use modules for secondary purposes. It uses a Filter in self-oscillating state to act as an FM modulator, being modulated by a slow sine wave, which is in turn sync-ed to an env. It makes some interesting industrial bass sounds and some nice manipulations include tweaking the Cutoff of the modulating Filter, the main low pass filter (polyFilter) and the Distortion amount.</desc>
+  <tag type="patchtype">Synth</tag>
+  <tag type="musicstyle">Industrial</tag>
+  <tag type="musicstyle">Techno</tag>
+  <tag type="musicstyle">Electronic</tag>
+  <modshell>2<modshell>
+  <mod>SC/Env/ADSRs/ADSR Vintage</mod>
+  <mod>SC/Effects/Distortion/Distortion</mod>
+  <mod>SC/Filter/Multimode/Poly Filter</mod>
+</modpatch>
